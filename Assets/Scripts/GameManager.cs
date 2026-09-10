@@ -11,6 +11,7 @@ namespace PuyoGame
     public enum GameState
     {
         Title,
+        Rules,
         Playing,
         GameOver,
     }
@@ -31,6 +32,8 @@ namespace PuyoGame
         [SerializeField] GameObject scoreRoot;
         [Tooltip("タイトル画面（ロゴと開始案内）")]
         [SerializeField] GameObject titleRoot;
+        [Tooltip("あそびかたの説明画面")]
+        [SerializeField] GameObject rulesRoot;
         [Tooltip("ゲームオーバー表示")]
         [SerializeField] GameObject gameOverRoot;
 
@@ -111,6 +114,9 @@ namespace PuyoGame
             switch (State)
             {
                 case GameState.Title:
+                    if (IsStartPressed()) ShowRules();
+                    break;
+                case GameState.Rules:
                     if (IsStartPressed()) StartGame();
                     break;
                 case GameState.GameOver:
@@ -151,12 +157,25 @@ namespace PuyoGame
             }
             if (popupText != null) popupText.Hide();
             if (cameraShake != null) cameraShake.Stop();
-            if (music != null) music.PlayTrack(MusicPlayer.Track.Title);
+            // ここではまだ鳴らさない。ブラウザは利用者が触るまで音を止めるので、
+            // 「はじめる」を押した瞬間から鳴らすほうが確実で、聞き逃しもない。
+            if (music != null) music.PlayTrack(MusicPlayer.Track.None);
 
             ApplyStateToUI();
         }
 
-        /// <summary>ゲームを開始する（タイトルからでもゲームオーバーからでも同じ入口）。</summary>
+        /// <summary>あそびかたの説明を出す。ここで初めてBGMを鳴らし始める。</summary>
+        public void ShowRules()
+        {
+            // 押した手応えを返す。ブラウザの音の制限も、この操作をきっかけに外れる。
+            if (gameAudio != null) gameAudio.PlayConfirm();
+
+            State = GameState.Rules;
+            ApplyStateToUI();
+            if (music != null) music.PlayTrack(MusicPlayer.Track.Title);
+        }
+
+        /// <summary>ゲームを開始する（説明画面からでもゲームオーバーからでも同じ入口）。</summary>
         public void StartGame()
         {
             // ボタン・スペース・Rのどれで始めても、押した手応えを返す
@@ -232,9 +251,11 @@ namespace PuyoGame
         void ApplyStateToUI()
         {
             if (titleRoot != null) titleRoot.SetActive(State == GameState.Title);
+            if (rulesRoot != null) rulesRoot.SetActive(State == GameState.Rules);
             if (gameOverRoot != null) gameOverRoot.SetActive(State == GameState.GameOver);
             var scoreTarget = scoreRoot != null ? scoreRoot : (scoreText != null ? scoreText.gameObject : null);
-            if (scoreTarget != null) scoreTarget.SetActive(State != GameState.Title);
+            if (scoreTarget != null)
+                scoreTarget.SetActive(State != GameState.Title && State != GameState.Rules);
         }
 
         /// <summary>0から最終スコアまでの数え上げを始める。</summary>

@@ -35,6 +35,28 @@ namespace PuyoGame.EditorTools
         const string ButtonPath = "Assets/Sprites/UI/Kenney_UIPack/blue_button_rectangle_depth_gradient.png";
         const string RoundButtonPath = "Assets/Sprites/UI/Kenney_UIPack/blue_button_round_depth_flat.png";
         const string IconRoot = "Assets/Sprites/UI/Kenney_Icons";
+        const string JapaneseFontSource = "Assets/Fonts/NotoSansJP/NotoSansJP-Regular.otf";
+        const string JapaneseFontAsset = "Assets/Fonts/NotoSansJP/NotoSansJP SDF.asset";
+
+        // 画面に出す日本語。ここに無い文字はフォント資産に入らないので、追記したら作り直すこと。
+        const string StartButtonLabel = "はじめる";
+        const string PlayButtonLabel = "START";
+        static readonly string[] RulesLines =
+        {
+            "あそびかた",
+            "",
+            "おなじ かおが たて か よこに",
+            "3つ ならぶと きえるよ",
+            "",
+            "つづけて きえると スコアアップ！",
+            "",
+            "いちばん うえまで つもったら",
+            "ゲームオーバー",
+            "",
+            "ひだりの ボタン → よこに うごかす",
+            "みぎの ボタン → まわす",
+            "まんなか → はやく おとす",
+        };
         const string SparkleRoot = "Assets/Sprites/FX/Sparkles";
         const string PuyoRoot = "Assets/Sprites/Puyo";
 
@@ -91,11 +113,12 @@ namespace PuyoGame.EditorTools
         /// </summary>
         static readonly (string name, string icon, float x, float size, bool mirrored)[] TouchPadLayout =
         {
-            ("MoveLeftButton",    "arrowLeft.png",  0.11f, 175f, false),
-            ("RotateLeftButton",  "return.png",     0.29f, 150f, false),
-            ("SoftDropButton",    "arrowDown.png",  0.50f, 175f, false),
-            ("RotateRightButton", "return.png",     0.71f, 150f, true),
-            ("MoveRightButton",   "arrowRight.png", 0.89f, 175f, false),
+            // 左に移動ボタン2つ、右に回転ボタン2つ、真ん中に落下
+            ("MoveLeftButton",    "arrowLeft.png",  0.10f, 165f, false),
+            ("MoveRightButton",   "arrowRight.png", 0.27f, 165f, false),
+            ("SoftDropButton",    "arrowDown.png",  0.50f, 165f, false),
+            ("RotateLeftButton",  "return.png",     0.73f, 165f, false),
+            ("RotateRightButton", "return.png",     0.90f, 165f, true),
         };
 
         const float TouchPadY = 195f;            // 画面下端からのUI座標
@@ -339,17 +362,18 @@ namespace PuyoGame.EditorTools
             if (gm == null) gm = Undo.AddComponent<GameManager>(view.gameObject);
 
             BuildUI(out var scoreText, out var scoreRoot, out var titleRoot, out var gameOverRoot,
-                    out var finalScoreText, out var startButton, out var popup, out var touchPad);
+                    out var finalScoreText, out var rulesRoot,
+                    out var startButton, out var playButton, out var popup, out var touchPad);
 
             var pso = new SerializedObject(touchPad);
             pso.FindProperty("controller").objectReferenceValue = ctrl;
             pso.FindProperty("gameManager").objectReferenceValue = gm;
             pso.ApplyModifiedPropertiesWithoutUndo();
 
-            // ボタンから GameManager.StartGame を呼ぶ（重複登録しないよう一度クリアする）
-            while (startButton.onClick.GetPersistentEventCount() > 0)
-                UnityEventTools.RemovePersistentListener(startButton.onClick, 0);
-            UnityEventTools.AddPersistentListener(startButton.onClick, gm.StartGame);
+            // 「はじめる」→ あそびかた、「START」→ ゲーム開始
+            // 重複登録しないよう、いったん全部外してから付け直す
+            BindButton(startButton, gm.ShowRules);
+            BindButton(playButton, gm.StartGame);
 
             var so = new SerializedObject(gm);
             so.FindProperty("controller").objectReferenceValue = ctrl;
@@ -357,6 +381,7 @@ namespace PuyoGame.EditorTools
             so.FindProperty("scoreRoot").objectReferenceValue = scoreRoot;
             so.FindProperty("titleRoot").objectReferenceValue = titleRoot;
             so.FindProperty("gameOverRoot").objectReferenceValue = gameOverRoot;
+            so.FindProperty("rulesRoot").objectReferenceValue = rulesRoot;
             so.FindProperty("finalScoreText").objectReferenceValue = finalScoreText;
             so.FindProperty("popupText").objectReferenceValue = popup;
             so.FindProperty("cameraShake").objectReferenceValue = EnsureCameraShake();
@@ -495,9 +520,12 @@ namespace PuyoGame.EditorTools
         static void BuildUI(out TMP_Text scoreText, out GameObject scoreRoot,
                             out GameObject titleRoot, out GameObject gameOverRoot,
                             out TMP_Text finalScoreText,
-                            out Button startButton, out PopupText popup,
-                            out TouchControlPad touchPad)
+                            out GameObject rulesRoot,
+                            out Button startButton, out Button playButton,
+                            out PopupText popup, out TouchControlPad touchPad)
         {
+            var japaneseFont = EnsureJapaneseFont();
+
             var canvasGo = GameObject.Find(CanvasObjectName);
             if (canvasGo == null)
             {
@@ -553,7 +581,8 @@ namespace PuyoGame.EditorTools
             var logo = FindOrCreateImage(titleRoot.transform, "LogoImage", LogoPath);
             SetFitted(logo.rectTransform, new Vector2(0f, 320f), 900f, 620f, logo.sprite);
 
-            startButton = BuildStartButton(titleRoot.transform);
+            startButton = BuildActionButton(titleRoot.transform, "StartButton",
+                                           StartButtonLabel, japaneseFont);
 
             var startText = FindOrCreateText(titleRoot.transform, "StartText");
             SetCentered(startText.rectTransform, new Vector2(0f, -330f), new Vector2(900f, 100f));
@@ -561,6 +590,36 @@ namespace PuyoGame.EditorTools
             startText.alignment = TextAlignmentOptions.Center;
             startText.color = new Color(1f, 1f, 1f, 0.85f);
             startText.text = "or Press SPACE";
+            if (japaneseFont != null) startText.font = japaneseFont;
+
+            // --- あそびかたの説明（「はじめる」の次に出す） ---
+            rulesRoot = FindOrCreateRoot(canvasGo.transform, "RulesRoot");
+            CreateDimPanel(rulesRoot.transform, 0.72f);
+
+            var rulesText = FindOrCreateText(rulesRoot.transform, "RulesText");
+            SetCentered(rulesText.rectTransform, new Vector2(0f, 120f), new Vector2(900f, 1000f));
+            rulesText.fontSize = 46f;
+            rulesText.lineSpacing = 12f;
+            rulesText.alignment = TextAlignmentOptions.Center;
+            rulesText.color = Color.white;
+            rulesText.raycastTarget = false;
+            rulesText.text = string.Join("\n", RulesLines);
+            if (japaneseFont != null) rulesText.font = japaneseFont;
+
+            playButton = BuildActionButton(rulesRoot.transform, "PlayButton",
+                                           PlayButtonLabel, japaneseFont);
+            SetCentered(playButton.image.rectTransform, new Vector2(0f, -560f), new Vector2(440f, 140f));
+
+            var playHint = FindOrCreateText(rulesRoot.transform, "PlayHint");
+            SetCentered(playHint.rectTransform, new Vector2(0f, -700f), new Vector2(900f, 90f));
+            playHint.fontSize = 40f;
+            playHint.alignment = TextAlignmentOptions.Center;
+            playHint.color = new Color(1f, 1f, 1f, 0.8f);
+            playHint.raycastTarget = false;
+            playHint.text = "or Press SPACE";
+            if (japaneseFont != null) playHint.font = japaneseFont;
+
+            rulesRoot.SetActive(false);
 
             // --- ゲームオーバー（画像＋再開案内） ---
             gameOverRoot = FindOrCreateRoot(canvasGo.transform, "GameOverRoot");
@@ -585,6 +644,7 @@ namespace PuyoGame.EditorTools
             hint.alignment = TextAlignmentOptions.Center;
             hint.color = Color.white;
             hint.text = "Tap or Press R to Restart";
+            if (japaneseFont != null) hint.font = japaneseFont;
 
             // --- 大量消去のポップアップ（中央やや上、既定は非表示） ---
             var popupRoot = FindOrCreateRoot(canvasGo.transform, "PopupRoot");
@@ -626,10 +686,9 @@ namespace PuyoGame.EditorTools
             var root = FindOrCreateRoot(canvasGo.transform, "TouchPad");
             root.transform.SetAsFirstSibling();      // タイトルやゲームオーバーより奥に置く
 
-            var buttons = new HoldButton[TouchPadLayout.Length];
-            for (int i = 0; i < TouchPadLayout.Length; i++)
+            var buttons = new Dictionary<string, HoldButton>();
+            foreach (var item in TouchPadLayout)
             {
-                var item = TouchPadLayout[i];
 
                 var img = FindOrCreateImage(root.transform, item.name, RoundButtonPath);
                 img.raycastTarget = true;            // ここで指を受ける
@@ -657,7 +716,7 @@ namespace PuyoGame.EditorTools
 
                 var hold = img.GetComponent<HoldButton>();
                 if (hold == null) hold = img.gameObject.AddComponent<HoldButton>();
-                buttons[i] = hold;
+                buttons[item.name] = hold;
             }
 
             var pad = canvasGo.GetComponent<TouchControlPad>();
@@ -666,11 +725,11 @@ namespace PuyoGame.EditorTools
             // パッド自体は消したり出したりするので、制御役は常に生きている Canvas に置く
             var so = new SerializedObject(pad);
             so.FindProperty("root").objectReferenceValue = root;
-            so.FindProperty("moveLeft").objectReferenceValue = buttons[0];
-            so.FindProperty("rotateLeft").objectReferenceValue = buttons[1];
-            so.FindProperty("softDrop").objectReferenceValue = buttons[2];
-            so.FindProperty("rotateRight").objectReferenceValue = buttons[3];
-            so.FindProperty("moveRight").objectReferenceValue = buttons[4];
+            so.FindProperty("moveLeft").objectReferenceValue = buttons["MoveLeftButton"];
+            so.FindProperty("moveRight").objectReferenceValue = buttons["MoveRightButton"];
+            so.FindProperty("softDrop").objectReferenceValue = buttons["SoftDropButton"];
+            so.FindProperty("rotateLeft").objectReferenceValue = buttons["RotateLeftButton"];
+            so.FindProperty("rotateRight").objectReferenceValue = buttons["RotateRightButton"];
             so.ApplyModifiedPropertiesWithoutUndo();
 
             root.SetActive(false);        // プレイ中だけ出す
@@ -713,10 +772,19 @@ namespace PuyoGame.EditorTools
             return decor;
         }
 
-        /// <summary>Kenney のボタン画像を使ったスタートボタンを作る。</summary>
-        static Button BuildStartButton(Transform parent)
+        /// <summary>ボタンの押し先を差し替える。前の登録が残らないよう全部外してから付ける。</summary>
+        static void BindButton(Button button, UnityEngine.Events.UnityAction action)
         {
-            var img = FindOrCreateImage(parent, "StartButton", ButtonPath,
+            while (button.onClick.GetPersistentEventCount() > 0)
+                UnityEventTools.RemovePersistentListener(button.onClick, 0);
+            UnityEventTools.AddPersistentListener(button.onClick, action);
+        }
+
+        /// <summary>Kenney のボタン画像を使った押しボタンを作る。</summary>
+        static Button BuildActionButton(Transform parent, string name, string text,
+                                        TMP_FontAsset font)
+        {
+            var img = FindOrCreateImage(parent, name, ButtonPath,
                                         new Vector4(20f, 24f, 20f, 20f));
             img.type = Image.Type.Sliced;      // 9スライスなので拡大しても角が崩れない
             img.preserveAspect = false;
@@ -732,7 +800,6 @@ namespace PuyoGame.EditorTools
             colors.pressedColor = new Color(0.8f, 0.8f, 0.8f, 1f);
             button.colors = colors;
 
-            // ラベルは既定フォント（LiberationSans）に日本語がないため英字にする
             var label = FindOrCreateText(img.transform, "Label");
             var lrt = label.rectTransform;
             lrt.anchorMin = Vector2.zero;
@@ -743,7 +810,8 @@ namespace PuyoGame.EditorTools
             label.alignment = TextAlignmentOptions.Center;
             label.color = Color.white;
             label.raycastTarget = false;
-            label.text = "START";
+            label.text = text;
+            if (font != null) label.font = font;   // 日本語はこの資産にしか入っていない
 
             return button;
         }
@@ -865,6 +933,57 @@ namespace PuyoGame.EditorTools
             so.FindProperty("controller").objectReferenceValue = ctrl;
             so.FindProperty("gameManager").objectReferenceValue = view.GetComponent<GameManager>();
             so.ApplyModifiedPropertiesWithoutUndo();
+        }
+
+        /// <summary>
+        /// 日本語を表示できる TMP フォント資産を用意する。
+        /// 使う文字だけを焼き込むので、フォント全体（4MB超）を抱え込まずに済む。
+        /// </summary>
+        static TMP_FontAsset EnsureJapaneseFont()
+        {
+            var existing = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(JapaneseFontAsset);
+            if (existing != null) return existing;
+
+            var source = AssetDatabase.LoadAssetAtPath<Font>(JapaneseFontSource);
+            if (source == null)
+            {
+                Debug.LogWarning($"[PuyoGame] フォントが見つかりません: {JapaneseFontSource}");
+                return null;
+            }
+
+            // いったん動的に作って必要な文字を流し込み、そのあと静的に切り替えて固める
+            var asset = TMP_FontAsset.CreateFontAsset(
+                source, 80, 9, UnityEngine.TextCore.LowLevel.GlyphRenderMode.SDFAA,
+                1024, 1024, AtlasPopulationMode.Dynamic, true);
+            asset.name = "NotoSansJP SDF";
+
+            asset.TryAddCharacters(NeededCharacters(), out string missing);
+            if (!string.IsNullOrEmpty(missing))
+                Debug.LogWarning($"[PuyoGame] フォントに入らなかった文字: {missing}");
+
+            asset.atlasPopulationMode = AtlasPopulationMode.Static;
+
+            AssetDatabase.CreateAsset(asset, JapaneseFontAsset);
+            // 材質とアトラスは、フォント資産の一部として保存しないと参照が切れる
+            if (asset.material != null) AssetDatabase.AddObjectToAsset(asset.material, asset);
+            if (asset.atlasTexture != null) AssetDatabase.AddObjectToAsset(asset.atlasTexture, asset);
+            AssetDatabase.SaveAssets();
+
+            Debug.Log($"[PuyoGame] 日本語フォントを作成しました: {asset.characterTable.Count}文字 / "
+                      + $"アトラス {asset.atlasWidth}x{asset.atlasHeight}");
+            return asset;
+        }
+
+        /// <summary>画面に出す文字を全部集める。重複は問題ない。</summary>
+        static string NeededCharacters()
+        {
+            var sb = new System.Text.StringBuilder();
+            sb.Append(StartButtonLabel).Append(PlayButtonLabel);
+            foreach (var line in RulesLines) sb.Append(line);
+            sb.Append("SCORE0123456789: Nice!GreatTapPressRtoestrNice");
+            sb.Append("or Press SPACE");
+            sb.Append("→←↑↓・、。！？（）");
+            return sb.ToString();
         }
 
         // ---------------- 画面比率 ----------------

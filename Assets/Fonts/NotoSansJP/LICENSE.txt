@@ -1,0 +1,7 @@
+Noto Sans JP
+Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+SIL Open Font License, Version 1.1 で提供されています。
+全文: https://scripts.sil.org/OFL
+
+OFL は再配布と組み込みを許可しています（フォント単体の販売のみ禁止）。
+このゲームのビルドに埋め込む用途は許可範囲内です。

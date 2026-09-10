@@ -24,6 +24,12 @@ cp -R "$BUILD"/. "$DOCS"/
 # これが無いと、GitHub Pages が Jekyll として処理して一部ファイルを配信しない
 touch "$DOCS/.nojekyll"
 
+# ソース側の変更が置き去りにならないよう知らせる（docs だけをコミットするため）
+if [ -n "$(git status --porcelain -- . ":(exclude)$DOCS")" ]; then
+  echo "注意: docs 以外に未コミットの変更があります。別途コミットしてください:" >&2
+  git status --short -- . ":(exclude)$DOCS" >&2
+fi
+
 git add -A "$DOCS"
 if git diff --cached --quiet; then
   echo "ビルド結果に変化がないので、コミットしませんでした。"
