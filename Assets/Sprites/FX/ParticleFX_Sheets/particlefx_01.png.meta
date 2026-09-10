@@ -1,0 +1,5046 @@
+fileFormatVersion: 2
+guid: 57359a1f8aef8465397787ab2d2ef521
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -236999210067315390
+    second: particlefx_01_0
+  - first:
+      213: 4068943603158497388
+    second: particlefx_01_1
+  - first:
+      213: 6156589684011104928
+    second: particlefx_01_2
+  - first:
+      213: -5623776759680967375
+    second: particlefx_01_3
+  - first:
+      213: 1276505624745636186
+    second: particlefx_01_4
+  - first:
+      213: 596038842544238205
+    second: particlefx_01_5
+  - first:
+      213: 2151928020379219768
+    second: particlefx_01_6
+  - first:
+      213: -7737486441759412819
+    second: particlefx_01_7
+  - first:
+      213: 4375361517763721651
+    second: particlefx_01_8
+  - first:
+      213: 3847647309470063455
+    second: particlefx_01_9
+  - first:
+      213: -7218674462426098068
+    second: particlefx_01_10
+  - first:
+      213: -7295265049197652746
+    second: particlefx_01_11
+  - first:
+      213: 1762323259816830487
+    second: particlefx_01_12
+  - first:
+      213: 617988958532657557
+    second: particlefx_01_13
+  - first:
+      213: -3463829682670555069
+    second: particlefx_01_14
+  - first:
+      213: 8538589067068635822
+    second: particlefx_01_15
+  - first:
+      213: 323415478506531440
+    second: particlefx_01_16
+  - first:
+      213: 735148942542832732
+    second: particlefx_01_17
+  - first:
+      213: 9022319748070887730
+    second: particlefx_01_18
+  - first:
+      213: 2141034891440349268
+    second: particlefx_01_19
+  - first:
+      213: -9176425873542427162
+    second: particlefx_01_20
+  - first:
+      213: -5731570131954236425
+    second: particlefx_01_21
+  - first:
+      213: 5387449239391919147
+    second: particlefx_01_22
+  - first:
+      213: 6335654889430378384
+    second: particlefx_01_23
+  - first:
+      213: -3228414316031964559
+    second: particlefx_01_24
+  - first:
+      213: 3394296229738205348
+    second: particlefx_01_25
+  - first:
+      213: 1145256095775728950
+    second: particlefx_01_26
+  - first:
+      213: -7705120220716404598
+    second: particlefx_01_27
+  - first:
+      213: -1163014027798973751
+    second: particlefx_01_28
+  - first:
+      213: -4368415001694281115
+    second: particlefx_01_29
+  - first:
+      213: -2926303733099800193
+    second: particlefx_01_30
+  - first:
+      213: -9148882197897650827
+    second: particlefx_01_31
+  - first:
+      213: 1441946412151887696
+    second: particlefx_01_32
+  - first:
+      213: -1036675579258146280
+    second: particlefx_01_33
+  - first:
+      213: -6811969781488880973
+    second: particlefx_01_34
+  - first:
+      213: -3077953952504843158
+    second: particlefx_01_35
+  - first:
+      213: -5412543658194924075
+    second: particlefx_01_36
+  - first:
+      213: -6544051743614240628
+    second: particlefx_01_37
+  - first:
+      213: 7189991318319555579
+    second: particlefx_01_38
+  - first:
+      213: -8491358892280668526
+    second: particlefx_01_39
+  - first:
+      213: -4383435020107837164
+    second: particlefx_01_40
+  - first:
+      213: -3036017494640243046
+    second: particlefx_01_41
+  - first:
+      213: -4041844169133962576
+    second: particlefx_01_42
+  - first:
+      213: 2768958108071909292
+    second: particlefx_01_43
+  - first:
+      213: 8814513017153760204
+    second: particlefx_01_44
+  - first:
+      213: 6617693040569356461
+    second: particlefx_01_45
+  - first:
+      213: 5070757502312627354
+    second: particlefx_01_46
+  - first:
+      213: -1333880938657999111
+    second: particlefx_01_47
+  - first:
+      213: -5060026268301611586
+    second: particlefx_01_48
+  - first:
+      213: -3028558307211978366
+    second: particlefx_01_49
+  - first:
+      213: -8988997012313167301
+    second: particlefx_01_50
+  - first:
+      213: -7716042072592156165
+    second: particlefx_01_51
+  - first:
+      213: 1694565744922776187
+    second: particlefx_01_52
+  - first:
+      213: -3171618521292427120
+    second: particlefx_01_53
+  - first:
+      213: 5316235074522699929
+    second: particlefx_01_54
+  - first:
+      213: -133504135060403421
+    second: particlefx_01_55
+  - first:
+      213: 8205740148571258800
+    second: particlefx_01_56
+  - first:
+      213: 5917459477554789947
+    second: particlefx_01_57
+  - first:
+      213: 5434835654624561977
+    second: particlefx_01_58
+  - first:
+      213: 3168661055762953908
+    second: particlefx_01_59
+  - first:
+      213: -4378543728084111020
+    second: particlefx_01_60
+  - first:
+      213: 8048827942863126620
+    second: particlefx_01_61
+  - first:
+      213: 7384794582471606823
+    second: particlefx_01_62
+  - first:
+      213: -1012786098943639566
+    second: particlefx_01_63
+  - first:
+      213: 1565273120651048541
+    second: particlefx_01_64
+  - first:
+      213: -3908589574538467666
+    second: particlefx_01_65
+  - first:
+      213: 4657020458959127006
+    second: particlefx_01_66
+  - first:
+      213: 4130274436687659682
+    second: particlefx_01_67
+  - first:
+      213: 1445010913595644278
+    second: particlefx_01_68
+  - first:
+      213: -5598691183639714188
+    second: particlefx_01_69
+  - first:
+      213: 3512321403403787833
+    second: particlefx_01_70
+  - first:
+      213: 3037840009795337182
+    second: particlefx_01_71
+  - first:
+      213: 101447922303864112
+    second: particlefx_01_72
+  - first:
+      213: -7372638305219572482
+    second: particlefx_01_73
+  - first:
+      213: 9097376499028975820
+    second: particlefx_01_74
+  - first:
+      213: 6660590860403182212
+    second: particlefx_01_75
+  - first:
+      213: 5954694210258644672
+    second: particlefx_01_76
+  - first:
+      213: -7459278176495771107
+    second: particlefx_01_77
+  - first:
+      213: 1958753478438722347
+    second: particlefx_01_78
+  - first:
+      213: -4634470557892589033
+    second: particlefx_01_79
+  - first:
+      213: 3879709516029824762
+    second: particlefx_01_80
+  - first:
+      213: -2211604001623893321
+    second: particlefx_01_81
+  - first:
+      213: 1102203211110048490
+    second: particlefx_01_82
+  - first:
+      213: -733898612791558126
+    second: particlefx_01_83
+  - first:
+      213: 1185706906044866494
+    second: particlefx_01_84
+  - first:
+      213: 4442125081476287705
+    second: particlefx_01_85
+  - first:
+      213: 5224876888641195219
+    second: particlefx_01_86
+  - first:
+      213: -200950386290096489
+    second: particlefx_01_87
+  - first:
+      213: 4027952384814234218
+    second: particlefx_01_88
+  - first:
+      213: 5142569422711517529
+    second: particlefx_01_89
+  - first:
+      213: -7840970574973614151
+    second: particlefx_01_90
+  - first:
+      213: 7816016434789738618
+    second: particlefx_01_91
+  - first:
+      213: -7295315192664719118
+    second: particlefx_01_92
+  - first:
+      213: 1011862312200996135
+    second: particlefx_01_93
+  - first:
+      213: 5975173855583167234
+    second: particlefx_01_94
+  - first:
+      213: 4294702219417385992
+    second: particlefx_01_95
+  - first:
+      213: 1714472430703647550
+    second: particlefx_01_96
+  - first:
+      213: 5990984508569200499
+    second: particlefx_01_97
+  - first:
+      213: -4910236804868862397
+    second: particlefx_01_98
+  - first:
+      213: -1334813861940566090
+    second: particlefx_01_99
+  - first:
+      213: -7149169077943791806
+    second: particlefx_01_100
+  - first:
+      213: -3592319967617101997
+    second: particlefx_01_101
+  - first:
+      213: -1303552707018545
+    second: particlefx_01_102
+  - first:
+      213: -2456158914087662563
+    second: particlefx_01_103
+  - first:
+      213: -5045485143530201313
+    second: particlefx_01_104
+  - first:
+      213: -5961384364009949946
+    second: particlefx_01_105
+  - first:
+      213: -7633226226915784311
+    second: particlefx_01_106
+  - first:
+      213: -7678021064791313224
+    second: particlefx_01_107
+  - first:
+      213: 2356063527935351482
+    second: particlefx_01_108
+  - first:
+      213: -6316930318864062168
+    second: particlefx_01_109
+  - first:
+      213: 6338478560924173119
+    second: particlefx_01_110
+  - first:
+      213: -5659645893511463887
+    second: particlefx_01_111
+  - first:
+      213: -8493479518708528397
+    second: particlefx_01_112
+  - first:
+      213: 8711086257248115056
+    second: particlefx_01_113
+  - first:
+      213: 3711563995531849909
+    second: particlefx_01_114
+  - first:
+      213: 7259155552878818917
+    second: particlefx_01_115
+  - first:
+      213: -3327302718390716749
+    second: particlefx_01_116
+  - first:
+      213: -7401472510905644178
+    second: particlefx_01_117
+  - first:
+      213: 3133630602646384764
+    second: particlefx_01_118
+  - first:
+      213: -8965771185901437281
+    second: particlefx_01_119
+  - first:
+      213: 3809117094095408857
+    second: particlefx_01_120
+  - first:
+      213: 1208209001166756474
+    second: particlefx_01_121
+  - first:
+      213: 8010683190964112148
+    second: particlefx_01_122
+  - first:
+      213: -5726163626658185581
+    second: particlefx_01_123
+  - first:
+      213: -4105045659123148713
+    second: particlefx_01_124
+  - first:
+      213: -9145553363881539434
+    second: particlefx_01_125
+  - first:
+      213: -4425770530053502592
+    second: particlefx_01_126
+  - first:
+      213: -5702845664371882411
+    second: particlefx_01_127
+  - first:
+      213: 2725571672886003743
+    second: particlefx_01_128
+  - first:
+      213: 7286448385772533686
+    second: particlefx_01_129
+  - first:
+      213: 5586015010175922265
+    second: particlefx_01_130
+  - first:
+      213: 769203731513760886
+    second: particlefx_01_131
+  - first:
+      213: -7285322761935411153
+    second: particlefx_01_132
+  - first:
+      213: -5014893994433967835
+    second: particlefx_01_133
+  - first:
+      213: 7957384986978298078
+    second: particlefx_01_134
+  - first:
+      213: 7445496574370171729
+    second: particlefx_01_135
+  - first:
+      213: -6281904441386207070
+    second: particlefx_01_136
+  - first:
+      213: -7741336166302490713
+    second: particlefx_01_137
+  - first:
+      213: 3705836619365020199
+    second: particlefx_01_138
+  - first:
+      213: 6021213501586092909
+    second: particlefx_01_139
+  - first:
+      213: 4388441253857551470
+    second: particlefx_01_140
+  - first:
+      213: 8440760577649660625
+    second: particlefx_01_141
+  - first:
+      213: 906051287970042972
+    second: particlefx_01_142
+  - first:
+      213: -2616498444005712615
+    second: particlefx_01_143
+  - first:
+      213: 8577686210950168102
+    second: particlefx_01_144
+  - first:
+      213: 8265446429026963337
+    second: particlefx_01_145
+  - first:
+      213: -2420496501752202081
+    second: particlefx_01_146
+  - first:
+      213: 661366941620259311
+    second: particlefx_01_147
+  - first:
+      213: -1738500937050754545
+    second: particlefx_01_148
+  - first:
+      213: -4682678681143572042
+    second: particlefx_01_149
+  - first:
+      213: -1034417939725102610
+    second: particlefx_01_150
+  - first:
+      213: 8457634925991797148
+    second: particlefx_01_151
+  - first:
+      213: 465420845438804832
+    second: particlefx_01_152
+  - first:
+      213: 5001752619916717529
+    second: particlefx_01_153
+  - first:
+      213: -4059523575617613666
+    second: particlefx_01_154
+  - first:
+      213: 5252790209495371818
+    second: particlefx_01_155
+  - first:
+      213: -7993557937460067193
+    second: particlefx_01_156
+  - first:
+      213: -6355504233614044717
+    second: particlefx_01_157
+  - first:
+      213: -1302508532937268666
+    second: particlefx_01_158
+  - first:
+      213: 1631355749126842885
+    second: particlefx_01_159
+  - first:
+      213: 1543522503750188608
+    second: particlefx_01_160
+  - first:
+      213: -8749716899284740303
+    second: particlefx_01_161
+  - first:
+      213: 7361463166235483171
+    second: particlefx_01_162
+  - first:
+      213: 2620469838427192753
+    second: particlefx_01_163
+  - first:
+      213: -1090211842754478732
+    second: particlefx_01_164
+  - first:
+      213: -4538219744908539359
+    second: particlefx_01_165
+  - first:
+      213: 374154285246858008
+    second: particlefx_01_166
+  - first:
+      213: -9150942145992109138
+    second: particlefx_01_167
+  - first:
+      213: 8509865959672465918
+    second: particlefx_01_168
+  - first:
+      213: 2954668004442036066
+    second: particlefx_01_169
+  - first:
+      213: 4094208875714661532
+    second: particlefx_01_170
+  - first:
+      213: 608199889390396914
+    second: particlefx_01_171
+  - first:
+      213: -4459331717568361963
+    second: particlefx_01_172
+  - first:
+      213: -6620843839819819377
+    second: particlefx_01_173
+  - first:
+      213: 7385859558663678211
+    second: particlefx_01_174
+  - first:
+      213: 4032817436332717126
+    second: particlefx_01_175
+  - first:
+      213: -6843073758063113379
+    second: particlefx_01_176
+  - first:
+      213: 1693858942447206804
+    second: particlefx_01_177
+  - first:
+      213: 1439182326972220434
+    second: particlefx_01_178
+  - first:
+      213: -8946391136316986405
+    second: particlefx_01_179
+  - first:
+      213: 4147457138015437
+    second: particlefx_01_180
+  - first:
+      213: 5108396103022128877
+    second: particlefx_01_181
+  - first:
+      213: -3604221484774110866
+    second: particlefx_01_182
+  - first:
+      213: 6246132936947081246
+    second: particlefx_01_183
+  - first:
+      213: -3235788704614007935
+    second: particlefx_01_184
+  - first:
+      213: -8652951630811047943
+    second: particlefx_01_185
+  - first:
+      213: 5038191672228528927
+    second: particlefx_01_186
+  - first:
+      213: -1404948075948457641
+    second: particlefx_01_187
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: particlefx_01_0
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 936
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245b3ef597206bcf0800000000000000
+      internalID: -236999210067315390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 914
+        width: 76
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c683c5d16aac77830800000000000000
+      internalID: 4068943603158497388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 913
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaf057d2b9907550800000000000000
+      internalID: 6156589684011104928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_3
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 913
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d5e1745d454f1b0800000000000000
+      internalID: -5623776759680967375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 913
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5170cc3a1f07b110800000000000000
+      internalID: 1276505624745636186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_5
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 913
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e2f2a5b2e854800800000000000000
+      internalID: 596038842544238205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_6
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 912
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837b9e4122f2ddd10800000000000000
+      internalID: 2151928020379219768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_7
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 912
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad6780831dee9490800000000000000
+      internalID: -7737486441759412819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 783
+        width: 100
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b978366e1868bc30800000000000000
+      internalID: 4375361517763721651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 783
+        width: 100
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b53fd97d6956530800000000000000
+      internalID: 3847647309470063455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_10
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 782
+        width: 102
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6698e592dd12db90800000000000000
+      internalID: -7218674462426098068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_11
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 781
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f45048f61302ca90800000000000000
+      internalID: -7295265049197652746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_12
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 781
+        width: 103
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7166ac8eaa7057810800000000000000
+      internalID: 1762323259816830487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_13
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 781
+        width: 107
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591e37cfea9839800800000000000000
+      internalID: 617988958532657557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_14
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 780
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340b7f971410eefc0800000000000000
+      internalID: -3463829682670555069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_15
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 780
+        width: 109
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaf8a164892f7670800000000000000
+      internalID: 8538589067068635822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 651
+        width: 110
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07aae370aa00d7400800000000000000
+      internalID: 323415478506531440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 651
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5405497116c33a00800000000000000
+      internalID: 735148942542832732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_18
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 650
+        width: 113
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231d1c13208b53d70800000000000000
+      internalID: 9022319748070887730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 650
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450e40cd3eb76bd10800000000000000
+      internalID: 2141034891440349268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_20
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 649
+        width: 111
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edcccb6949c6a080800000000000000
+      internalID: -9176425873542427162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 649
+        width: 112
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f301a7055f5570b0800000000000000
+      internalID: -5731570131954236425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_22
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 648
+        width: 112
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c576f0a8014ca40800000000000000
+      internalID: 5387449239391919147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_23
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 648
+        width: 113
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097e6ffdd84cce750800000000000000
+      internalID: 6335654889430378384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519
+        width: 112
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a0121d84e5233d0800000000000000
+      internalID: -3228414316031964559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_25
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 593
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a05efbef66fa1f20800000000000000
+      internalID: 3394296229738205348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 588
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635209de954c4ef00800000000000000
+      internalID: 1145256095775728950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 518
+        width: 108
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80f4849bf9e11590800000000000000
+      internalID: -7705120220716404598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_28
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 517
+        width: 113
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2fe3457e42cdfe0800000000000000
+      internalID: -1163014027798973751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_29
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 589
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562668863b54063c0800000000000000
+      internalID: -4368415001694281115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_30
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 516
+        width: 113
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79dfab424ea367d0800000000000000
+      internalID: -2926303733099800193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 516
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d5a662d14a80180800000000000000
+      internalID: -9148882197897650827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_32
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 515
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05756714f92d20410800000000000000
+      internalID: 1441946412151887696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 514
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812fefe9d0dfc91f0800000000000000
+      internalID: -1036675579258146280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_34
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 513
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2f8a933950771a0800000000000000
+      internalID: -6811969781488880973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 389
+        width: 113
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6470f91039e845d0800000000000000
+      internalID: -3077953952504843158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 387
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd8ff14838c2e4b0800000000000000
+      internalID: -5412543658194924075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_37
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 386
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88f81e6c9bde25a0800000000000000
+      internalID: -6544051743614240628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_38
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 387
+        width: 114
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf36492820bf7c360800000000000000
+      internalID: 7189991318319555579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_39
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 386
+        width: 114
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e914d9312a82a80800000000000000
+      internalID: -8491358892280668526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_40
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 385
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411177ad219ea23c0800000000000000
+      internalID: -4383435020107837164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 111
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ec8149c26edd5d0800000000000000
+      internalID: -3036017494640243046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_42
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 385
+        width: 113
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba494d842c78e7c0800000000000000
+      internalID: -4041844169133962576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_43
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 383
+        width: 113
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7509d8ab05d6620800000000000000
+      internalID: 2768958108071909292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccba18743e0735a70800000000000000
+      internalID: 8814513017153760204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_45
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 256
+        width: 109
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da016b322c4c6db50800000000000000
+      internalID: 6617693040569356461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_46
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 256
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cbd731513fe5640800000000000000
+      internalID: 5070757502312627354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_47
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 112
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f610ae7a5a1d7de0800000000000000
+      internalID: -1333880938657999111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_48
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 337
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdacbb0bec27c9b0800000000000000
+      internalID: -5060026268301611586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_49
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 256
+        width: 110
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289521df34668f5d0800000000000000
+      internalID: -3028558307211978366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_50
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 255
+        width: 112
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3aa602d7daa04380800000000000000
+      internalID: -8988997012313167301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_51
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 255
+        width: 104
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9fc27cd9c1be490800000000000000
+      internalID: -7716042072592156165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_52
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 255
+        width: 106
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72daaa119e448710800000000000000
+      internalID: 1694565744922776187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_53
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 325
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090b05342c52cf3d0800000000000000
+      internalID: -3171618521292427120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_54
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 325
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998d56732af07c940800000000000000
+      internalID: 5316235074522699929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_55
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 127
+        width: 103
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32bcdad42b2b52ef0800000000000000
+      internalID: -133504135060403421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_56
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 127
+        width: 108
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf30c27035a0e170800000000000000
+      internalID: 8205740148571258800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_57
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 127
+        width: 107
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3efb64fa0a0f1250800000000000000
+      internalID: 5917459477554789947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_58
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 127
+        width: 100
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b468e9b3a6c6b40800000000000000
+      internalID: 5434835654624561977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_59
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 120
+        width: 99
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b67d52217859fb20800000000000000
+      internalID: 3168661055762953908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_60
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 99
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45138068da94c33c0800000000000000
+      internalID: -4378543728084111020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_61
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 2
+        width: 104
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5048989e5e23bf60800000000000000
+      internalID: 8048827942863126620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_62
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 247
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7220373eb8f0c7660800000000000000
+      internalID: 7384794582471606823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_63
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 243
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffb203b86cd1f1f0800000000000000
+      internalID: -1012786098943639566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_64
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 127
+        width: 85
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d567fdc2c97f8b510800000000000000
+      internalID: 1565273120651048541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_65
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 244
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6e6d49d76e1c9c0800000000000000
+      internalID: -3908589574538467666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_66
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 238
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed14cf7fe6f01a040800000000000000
+      internalID: 4657020458959127006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_67
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 226
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a205af87bea15930800000000000000
+      internalID: 4130274436687659682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_68
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 187
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6795e6915c5bd0410800000000000000
+      internalID: 1445010913595644278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_69
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 214
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4762b0818047d42b0800000000000000
+      internalID: -5598691183639714188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_70
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 204
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e52e215b54eb030800000000000000
+      internalID: 3512321403403787833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_71
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 209
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbf15cc463982a20800000000000000
+      internalID: 3037840009795337182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_72
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 209
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d8f1c095a686100800000000000000
+      internalID: 101447922303864112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_73
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 199
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc03f7f5802fa990800000000000000
+      internalID: -7372638305219572482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_74
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 111
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0eb94d9bf504e70800000000000000
+      internalID: 9097376499028975820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 92
+        width: 72
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a8b84291c2f6c50800000000000000
+      internalID: 6660590860403182212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_76
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 104
+        width: 57
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ceaa8cb5d253a250800000000000000
+      internalID: 5954694210258644672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_77
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 94
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d126529f4025b7890800000000000000
+      internalID: -7459278176495771107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_78
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 114
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b96e429e3ee2b10800000000000000
+      internalID: 1958753478438722347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_79
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 111
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a4ec2059d0fafb0800000000000000
+      internalID: -4634470557892589033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_80
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 104
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe09aecf3f77d530800000000000000
+      internalID: 3879709516029824762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_81
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 112
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba106bc0edce41e0800000000000000
+      internalID: -2211604001623893321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_82
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 108
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae262841bffcb4f00800000000000000
+      internalID: 1102203211110048490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_83
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210486b991ba0d5f0800000000000000
+      internalID: -733898612791558126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_84
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 110
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf188e162a747010800000000000000
+      internalID: 1185706906044866494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_85
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 109
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc4f39e93995ad30800000000000000
+      internalID: 4442125081476287705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_86
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 73
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc4b9ef8dd728840800000000000000
+      internalID: 5224876888641195219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_87
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 93
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79683b730b4163df0800000000000000
+      internalID: -200950386290096489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_88
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 102
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a3a0d5a5926e730800000000000000
+      internalID: 4027952384814234218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_89
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 97
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9517189b4a31e5740800000000000000
+      internalID: 5142569422711517529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 103
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b748682ec64f2390800000000000000
+      internalID: -7840970574973614151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_91
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 105
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78e1425981187c60800000000000000
+      internalID: 7816016434789738618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_92
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 93
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f085b80c75d1ca90800000000000000
+      internalID: -7295315192664719118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_93
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 95
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7258850796bda0e00800000000000000
+      internalID: 1011862312200996135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_94
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 106
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2036c3db6f41ce250800000000000000
+      internalID: 5975173855583167234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_95
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 94
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c747c0ae8d99b30800000000000000
+      internalID: 4294702219417385992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_96
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 95
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b9a4197970bc710800000000000000
+      internalID: 1714472430703647550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_97
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 107
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377a2204ba0442350800000000000000
+      internalID: 5990984508569200499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_98
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 97
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e0eba34a55bdbb0800000000000000
+      internalID: -4910236804868862397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_99
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 74
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7e3cd5dd9c97de0800000000000000
+      internalID: -1334813861940566090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_100
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 97
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f04fdf99c09cc90800000000000000
+      internalID: -7149169077943791806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_101
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 94
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fc3aab504852ec0800000000000000
+      internalID: -3592319967617101997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_102
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 46
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0c3fbfc6e5bfff0800000000000000
+      internalID: -1303552707018545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_103
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 91
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c45ed1b78f9edd0800000000000000
+      internalID: -2456158914087662563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_104
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 98
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f1f5c7ef5daf9b0800000000000000
+      internalID: -5045485143530201313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_105
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 94
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6057e957188e44da0800000000000000
+      internalID: -5961384364009949946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_106
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 99
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9894d7e6035511690800000000000000
+      internalID: -7633226226915784311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_107
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 84
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4b52f7580327590800000000000000
+      internalID: -7678021064791313224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_108
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 100
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba17d2bb4b62b020800000000000000
+      internalID: 2356063527935351482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_109
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 72
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8296631f751c558a0800000000000000
+      internalID: -6316930318864062168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_110
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 92
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3380502bacc6f750800000000000000
+      internalID: 6338478560924173119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_111
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 90
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c30c2cb06e471b0800000000000000
+      internalID: -5659645893511463887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_112
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 75
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa825cc069112a80800000000000000
+      internalID: -8493479518708528397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_113
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 83
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0799f033ccef3e870800000000000000
+      internalID: 8711086257248115056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_114
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 91
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b03eca0acf128330800000000000000
+      internalID: 3711563995531849909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_115
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 76
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56675a2c383bdb460800000000000000
+      internalID: 7259155552878818917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_116
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 88
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b631227ecb03d1d0800000000000000
+      internalID: -3327302718390716749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_117
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 78
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b86ac47ffa84990800000000000000
+      internalID: -7401472510905644178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_118
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 85
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70f7003e64ec7b20800000000000000
+      internalID: 3133630602646384764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_119
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 71
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e79eeeb9e239380800000000000000
+      internalID: -8965771185901437281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_120
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 65
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9decc65c0d3bcd430800000000000000
+      internalID: 3809117094095408857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_121
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 76
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a59f86fab64c010800000000000000
+      internalID: 1208209001166756474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_122
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 57
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41bcb957be9ab2f60800000000000000
+      internalID: 8010683190964112148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_123
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 71
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39eb64325849880b0800000000000000
+      internalID: -5726163626658185581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_124
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 67
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7589435f8b2f707c0800000000000000
+      internalID: -4105045659123148713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_125
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 77
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6984677bba7741180800000000000000
+      internalID: -9145553363881539434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_126
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 67
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089c4c2d6218492c0800000000000000
+      internalID: -4425770530053502592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_127
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 72
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556cc3e451c6bd0b0800000000000000
+      internalID: -5702845664371882411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_128
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 77
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18cc3ceefc23d520800000000000000
+      internalID: 2725571672886003743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_129
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 72
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7b03c933aae1560800000000000000
+      internalID: 7286448385772533686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_130
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 61
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95039874e03858d40800000000000000
+      internalID: 5586015010175922265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_131
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 62
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c58c8e7b2ccaa00800000000000000
+      internalID: 769203731513760886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_132
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 65
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28a5cc1c8555ea90800000000000000
+      internalID: -7285322761935411153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_133
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 58
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529068b6b74876ab0800000000000000
+      internalID: -5014893994433967835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_134
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 60
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed82ed15c7f4e6e60800000000000000
+      internalID: 7957384986978298078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_135
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 38
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bc8bbbfa7b35760800000000000000
+      internalID: 7445496574370171729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_136
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 67
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8f93a813132d8a0800000000000000
+      internalID: -6281904441386207070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_137
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 68
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afd7a8a5cf319490800000000000000
+      internalID: -7741336166302490713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_138
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 17
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722f2ec55c6cd6330800000000000000
+      internalID: 3705836619365020199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_139
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 17
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6333d627c5af8350800000000000000
+      internalID: 6021213501586092909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_140
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 44
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6469d5c110e6ec30800000000000000
+      internalID: 4388441253857551470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_141
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 41
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2dde8360b932570800000000000000
+      internalID: 8440760577649660625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_142
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 47
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c545dbf88d0f29c00800000000000000
+      internalID: 906051287970042972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_143
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 39
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d5da9278450bbd0800000000000000
+      internalID: -2616498444005712615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_144
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 49
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e737e89201a0770800000000000000
+      internalID: 8577686210950168102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_145
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 35
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f4c282cb3c4b270800000000000000
+      internalID: 8265446429026963337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_146
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 38
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cfbf8814ba86ed0800000000000000
+      internalID: -2420496501752202081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_147
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 49
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe94675bab5ad2900800000000000000
+      internalID: 661366941620259311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_148
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 31
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02f765db9a9fd7e0800000000000000
+      internalID: -1738500937050754545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_149
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b98425ac88c30fb0800000000000000
+      internalID: -4682678681143572042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_150
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 13
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1d4694d5205a1f0800000000000000
+      internalID: -1034417939725102610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_151
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 24
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91adab972e8f5570800000000000000
+      internalID: 8457634925991797148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_152
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 39
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06321730bc1857600800000000000000
+      internalID: 465420845438804832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_153
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 31
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dde384e18bc96540800000000000000
+      internalID: 5001752619916717529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_154
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 18
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e901df5f0dca9a7c0800000000000000
+      internalID: -4059523575617613666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_155
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 28
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a201f947dd8a5e840800000000000000
+      internalID: 5252790209495371818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_156
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 16
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7844036586d211190800000000000000
+      internalID: -7993557937460067193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_157
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 23
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d191fa8296bcc7a0800000000000000
+      internalID: -6355504233614044717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_158
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 18
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642eb59e36f8cede0800000000000000
+      internalID: -1302508532937268666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_159
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 27
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a2ff8196db3a610800000000000000
+      internalID: 1631355749126842885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_160
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 27
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ef9da0a81bb6510800000000000000
+      internalID: 1543522503750188608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_161
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 22
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13796ec86d2c29680800000000000000
+      internalID: -8749716899284740303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_162
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 17
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c969a3fbb292660800000000000000
+      internalID: 7361463166235483171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_163
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 26
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bdf3182f67cd5420800000000000000
+      internalID: 2620469838427192753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_164
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47df1beea1aced0f0800000000000000
+      internalID: -1090211842754478732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_165
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a0010cf210501c0800000000000000
+      internalID: -4538219744908539359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_166
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 4
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813445f0753413500800000000000000
+      internalID: 374154285246858008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_167
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 6
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea35dfb1a92510180800000000000000
+      internalID: -9150942145992109138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_168
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 12
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9477cc00e191670800000000000000
+      internalID: 8509865959672465918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_169
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267daf145e6110920800000000000000
+      internalID: 2954668004442036066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_170
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 13
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c4939c74d81d830800000000000000
+      internalID: 4094208875714661532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_171
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 9
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5eb87b392c07800800000000000000
+      internalID: 608199889390396914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_172
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a84beed654d12c0800000000000000
+      internalID: -4459331717568361963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_173
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 8
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86d43e3b990e14a0800000000000000
+      internalID: -6620843839819819377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_174
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309621bf228df7660800000000000000
+      internalID: 7385859558663678211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_175
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 8
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644fc90771277f730800000000000000
+      internalID: 4032817436332717126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_176
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5bc9d65ca48801a0800000000000000
+      internalID: -6843073758063113379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_177
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 0
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4914f24dbbbc18710800000000000000
+      internalID: 1693858942447206804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_178
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 6
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214033683b009f310800000000000000
+      internalID: 1439182326972220434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_179
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb6f1a59a808d380800000000000000
+      internalID: -8946391136316986405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_180
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 6
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccbe6d171cbe0000800000000000000
+      internalID: 4147457138015437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_181
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deeaf94b03ba4e640800000000000000
+      internalID: 5108396103022128877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_182
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e694534d7ab3bfdc0800000000000000
+      internalID: -3604221484774110866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_183
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10299e00d8bea650800000000000000
+      internalID: 6246132936947081246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_184
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 5
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bb24d215b2813d0800000000000000
+      internalID: -3235788704614007935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_185
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 0
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7deda465a8ae780800000000000000
+      internalID: -8652951630811047943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_186
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f134385e1a04be540800000000000000
+      internalID: 5038191672228528927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particlefx_01_187
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751493d2b2f908ce0800000000000000
+      internalID: -1404948075948457641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      particlefx_01_0: -236999210067315390
+      particlefx_01_1: 4068943603158497388
+      particlefx_01_10: -7218674462426098068
+      particlefx_01_100: -7149169077943791806
+      particlefx_01_101: -3592319967617101997
+      particlefx_01_102: -1303552707018545
+      particlefx_01_103: -2456158914087662563
+      particlefx_01_104: -5045485143530201313
+      particlefx_01_105: -5961384364009949946
+      particlefx_01_106: -7633226226915784311
+      particlefx_01_107: -7678021064791313224
+      particlefx_01_108: 2356063527935351482
+      particlefx_01_109: -6316930318864062168
+      particlefx_01_11: -7295265049197652746
+      particlefx_01_110: 6338478560924173119
+      particlefx_01_111: -5659645893511463887
+      particlefx_01_112: -8493479518708528397
+      particlefx_01_113: 8711086257248115056
+      particlefx_01_114: 3711563995531849909
+      particlefx_01_115: 7259155552878818917
+      particlefx_01_116: -3327302718390716749
+      particlefx_01_117: -7401472510905644178
+      particlefx_01_118: 3133630602646384764
+      particlefx_01_119: -8965771185901437281
+      particlefx_01_12: 1762323259816830487
+      particlefx_01_120: 3809117094095408857
+      particlefx_01_121: 1208209001166756474
+      particlefx_01_122: 8010683190964112148
+      particlefx_01_123: -5726163626658185581
+      particlefx_01_124: -4105045659123148713
+      particlefx_01_125: -9145553363881539434
+      particlefx_01_126: -4425770530053502592
+      particlefx_01_127: -5702845664371882411
+      particlefx_01_128: 2725571672886003743
+      particlefx_01_129: 7286448385772533686
+      particlefx_01_13: 617988958532657557
+      particlefx_01_130: 5586015010175922265
+      particlefx_01_131: 769203731513760886
+      particlefx_01_132: -7285322761935411153
+      particlefx_01_133: -5014893994433967835
+      particlefx_01_134: 7957384986978298078
+      particlefx_01_135: 7445496574370171729
+      particlefx_01_136: -6281904441386207070
+      particlefx_01_137: -7741336166302490713
+      particlefx_01_138: 3705836619365020199
+      particlefx_01_139: 6021213501586092909
+      particlefx_01_14: -3463829682670555069
+      particlefx_01_140: 4388441253857551470
+      particlefx_01_141: 8440760577649660625
+      particlefx_01_142: 906051287970042972
+      particlefx_01_143: -2616498444005712615
+      particlefx_01_144: 8577686210950168102
+      particlefx_01_145: 8265446429026963337
+      particlefx_01_146: -2420496501752202081
+      particlefx_01_147: 661366941620259311
+      particlefx_01_148: -1738500937050754545
+      particlefx_01_149: -4682678681143572042
+      particlefx_01_15: 8538589067068635822
+      particlefx_01_150: -1034417939725102610
+      particlefx_01_151: 8457634925991797148
+      particlefx_01_152: 465420845438804832
+      particlefx_01_153: 5001752619916717529
+      particlefx_01_154: -4059523575617613666
+      particlefx_01_155: 5252790209495371818
+      particlefx_01_156: -7993557937460067193
+      particlefx_01_157: -6355504233614044717
+      particlefx_01_158: -1302508532937268666
+      particlefx_01_159: 1631355749126842885
+      particlefx_01_16: 323415478506531440
+      particlefx_01_160: 1543522503750188608
+      particlefx_01_161: -8749716899284740303
+      particlefx_01_162: 7361463166235483171
+      particlefx_01_163: 2620469838427192753
+      particlefx_01_164: -1090211842754478732
+      particlefx_01_165: -4538219744908539359
+      particlefx_01_166: 374154285246858008
+      particlefx_01_167: -9150942145992109138
+      particlefx_01_168: 8509865959672465918
+      particlefx_01_169: 2954668004442036066
+      particlefx_01_17: 735148942542832732
+      particlefx_01_170: 4094208875714661532
+      particlefx_01_171: 608199889390396914
+      particlefx_01_172: -4459331717568361963
+      particlefx_01_173: -6620843839819819377
+      particlefx_01_174: 7385859558663678211
+      particlefx_01_175: 4032817436332717126
+      particlefx_01_176: -6843073758063113379
+      particlefx_01_177: 1693858942447206804
+      particlefx_01_178: 1439182326972220434
+      particlefx_01_179: -8946391136316986405
+      particlefx_01_18: 9022319748070887730
+      particlefx_01_180: 4147457138015437
+      particlefx_01_181: 5108396103022128877
+      particlefx_01_182: -3604221484774110866
+      particlefx_01_183: 6246132936947081246
+      particlefx_01_184: -3235788704614007935
+      particlefx_01_185: -8652951630811047943
+      particlefx_01_186: 5038191672228528927
+      particlefx_01_187: -1404948075948457641
+      particlefx_01_19: 2141034891440349268
+      particlefx_01_2: 6156589684011104928
+      particlefx_01_20: -9176425873542427162
+      particlefx_01_21: -5731570131954236425
+      particlefx_01_22: 5387449239391919147
+      particlefx_01_23: 6335654889430378384
+      particlefx_01_24: -3228414316031964559
+      particlefx_01_25: 3394296229738205348
+      particlefx_01_26: 1145256095775728950
+      particlefx_01_27: -7705120220716404598
+      particlefx_01_28: -1163014027798973751
+      particlefx_01_29: -4368415001694281115
+      particlefx_01_3: -5623776759680967375
+      particlefx_01_30: -2926303733099800193
+      particlefx_01_31: -9148882197897650827
+      particlefx_01_32: 1441946412151887696
+      particlefx_01_33: -1036675579258146280
+      particlefx_01_34: -6811969781488880973
+      particlefx_01_35: -3077953952504843158
+      particlefx_01_36: -5412543658194924075
+      particlefx_01_37: -6544051743614240628
+      particlefx_01_38: 7189991318319555579
+      particlefx_01_39: -8491358892280668526
+      particlefx_01_4: 1276505624745636186
+      particlefx_01_40: -4383435020107837164
+      particlefx_01_41: -3036017494640243046
+      particlefx_01_42: -4041844169133962576
+      particlefx_01_43: 2768958108071909292
+      particlefx_01_44: 8814513017153760204
+      particlefx_01_45: 6617693040569356461
+      particlefx_01_46: 5070757502312627354
+      particlefx_01_47: -1333880938657999111
+      particlefx_01_48: -5060026268301611586
+      particlefx_01_49: -3028558307211978366
+      particlefx_01_5: 596038842544238205
+      particlefx_01_50: -8988997012313167301
+      particlefx_01_51: -7716042072592156165
+      particlefx_01_52: 1694565744922776187
+      particlefx_01_53: -3171618521292427120
+      particlefx_01_54: 5316235074522699929
+      particlefx_01_55: -133504135060403421
+      particlefx_01_56: 8205740148571258800
+      particlefx_01_57: 5917459477554789947
+      particlefx_01_58: 5434835654624561977
+      particlefx_01_59: 3168661055762953908
+      particlefx_01_6: 2151928020379219768
+      particlefx_01_60: -4378543728084111020
+      particlefx_01_61: 8048827942863126620
+      particlefx_01_62: 7384794582471606823
+      particlefx_01_63: -1012786098943639566
+      particlefx_01_64: 1565273120651048541
+      particlefx_01_65: -3908589574538467666
+      particlefx_01_66: 4657020458959127006
+      particlefx_01_67: 4130274436687659682
+      particlefx_01_68: 1445010913595644278
+      particlefx_01_69: -5598691183639714188
+      particlefx_01_7: -7737486441759412819
+      particlefx_01_70: 3512321403403787833
+      particlefx_01_71: 3037840009795337182
+      particlefx_01_72: 101447922303864112
+      particlefx_01_73: -7372638305219572482
+      particlefx_01_74: 9097376499028975820
+      particlefx_01_75: 6660590860403182212
+      particlefx_01_76: 5954694210258644672
+      particlefx_01_77: -7459278176495771107
+      particlefx_01_78: 1958753478438722347
+      particlefx_01_79: -4634470557892589033
+      particlefx_01_8: 4375361517763721651
+      particlefx_01_80: 3879709516029824762
+      particlefx_01_81: -2211604001623893321
+      particlefx_01_82: 1102203211110048490
+      particlefx_01_83: -733898612791558126
+      particlefx_01_84: 1185706906044866494
+      particlefx_01_85: 4442125081476287705
+      particlefx_01_86: 5224876888641195219
+      particlefx_01_87: -200950386290096489
+      particlefx_01_88: 4027952384814234218
+      particlefx_01_89: 5142569422711517529
+      particlefx_01_9: 3847647309470063455
+      particlefx_01_90: -7840970574973614151
+      particlefx_01_91: 7816016434789738618
+      particlefx_01_92: -7295315192664719118
+      particlefx_01_93: 1011862312200996135
+      particlefx_01_94: 5975173855583167234
+      particlefx_01_95: 4294702219417385992
+      particlefx_01_96: 1714472430703647550
+      particlefx_01_97: 5990984508569200499
+      particlefx_01_98: -4910236804868862397
+      particlefx_01_99: -1334813861940566090
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
