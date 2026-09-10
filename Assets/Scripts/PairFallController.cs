@@ -84,6 +84,12 @@ namespace PuyoGame
         public int LastChainCount { get; private set; }
 
         /// <summary>
+        /// 画面のボタンなど、キーボード以外からのソフトドロップ指示。
+        /// 押されている間 true にしておく。
+        /// </summary>
+        public bool SoftDropRequested { get; set; }
+
+        /// <summary>
         /// 着地後の消去が1回でも起きたときに発火する。
         /// 引数は各連鎖ステップで消えたマス数（index0 が1連鎖目）。
         /// </summary>
@@ -132,8 +138,9 @@ namespace PuyoGame
 
             if (!HasActivePair) return;
 
-            // 下キーを押している間だけ落下間隔を短くする
-            float interval = IsSoftDropHeld() ? fallInterval / softDropMultiplier : fallInterval;
+            // 下キーか画面のボタンを押している間だけ落下間隔を短くする
+            bool softDrop = IsSoftDropHeld() || SoftDropRequested;
+            float interval = softDrop ? fallInterval / softDropMultiplier : fallInterval;
             fallTimer += dt;
             while (fallTimer >= interval)
             {

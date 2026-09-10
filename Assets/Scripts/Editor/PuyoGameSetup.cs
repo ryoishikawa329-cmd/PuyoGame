@@ -33,6 +33,8 @@ namespace PuyoGame.EditorTools
         const string GameOverPath = "Assets/Sprites/UI/gameover.png";
         const string PanelPath = "Assets/Sprites/UI/Kenney_Panels/panel_blue.png";
         const string ButtonPath = "Assets/Sprites/UI/Kenney_UIPack/blue_button_rectangle_depth_gradient.png";
+        const string RoundButtonPath = "Assets/Sprites/UI/Kenney_UIPack/blue_button_round_depth_flat.png";
+        const string IconRoot = "Assets/Sprites/UI/Kenney_Icons";
         const string SparkleRoot = "Assets/Sprites/FX/Sparkles";
         const string PuyoRoot = "Assets/Sprites/Puyo";
 
@@ -80,7 +82,23 @@ namespace PuyoGame.EditorTools
         const string GameViewSizeName = "iPhone 19.5:9 (PuyoGame)";
 
         const float WidthFill = 0.85f;           // 盤面が画面幅に占める割合の目安
-        const float HeightFill = 0.92f;          // 盤面が画面高さに占める割合の上限
+        const float HeightFill = 0.88f;          // 盤面が画面高さに占める割合の上限（枠のぶん余裕を残す）
+        const float BottomReserve = 0.15f;       // 操作ボタンのために画面下部を空ける割合
+
+        /// <summary>
+        /// 画面下部の操作ボタン。左から順に並べる。
+        /// x はアンカー（画面幅に対する割合）、y は画面下端からのUI座標。
+        /// </summary>
+        static readonly (string name, string icon, float x, float size, bool mirrored)[] TouchPadLayout =
+        {
+            ("MoveLeftButton",    "arrowLeft.png",  0.11f, 175f, false),
+            ("RotateLeftButton",  "return.png",     0.29f, 150f, false),
+            ("SoftDropButton",    "arrowDown.png",  0.50f, 175f, false),
+            ("RotateRightButton", "return.png",     0.71f, 150f, true),
+            ("MoveRightButton",   "arrowRight.png", 0.89f, 175f, false),
+        };
+
+        const float TouchPadY = 195f;            // 画面下端からのUI座標
 
         [MenuItem("Tools/PuyoGame/シーンに盤面とUIをセットアップ")]
         public static void SetupBoardInScene()
@@ -179,7 +197,7 @@ namespace PuyoGame.EditorTools
             float boardHeight = BoardRows * CellSize;
 
             float fromWidth = (boardWidth / WidthFill) / (2f * DesignAspect);
-            float fromHeight = (boardHeight / HeightFill) / 2f;
+            float fromHeight = (boardHeight / HeightFill) / (2f * (1f - BottomReserve));
             return Mathf.Max(fromWidth, fromHeight);
         }
 
@@ -321,7 +339,12 @@ namespace PuyoGame.EditorTools
             if (gm == null) gm = Undo.AddComponent<GameManager>(view.gameObject);
 
             BuildUI(out var scoreText, out var scoreRoot, out var titleRoot, out var gameOverRoot,
-                    out var finalScoreText, out var startButton, out var popup);
+                    out var finalScoreText, out var startButton, out var popup, out var touchPad);
+
+            var pso = new SerializedObject(touchPad);
+            pso.FindProperty("controller").objectReferenceValue = ctrl;
+            pso.FindProperty("gameManager").objectReferenceValue = gm;
+            pso.ApplyModifiedPropertiesWithoutUndo();
 
             // ボタンから GameManager.StartGame を呼ぶ（重複登録しないよう一度クリアする）
             while (startButton.onClick.GetPersistentEventCount() > 0)
@@ -472,7 +495,8 @@ namespace PuyoGame.EditorTools
         static void BuildUI(out TMP_Text scoreText, out GameObject scoreRoot,
                             out GameObject titleRoot, out GameObject gameOverRoot,
                             out TMP_Text finalScoreText,
-                            out Button startButton, out PopupText popup)
+                            out Button startButton, out PopupText popup,
+                            out TouchControlPad touchPad)
         {
             var canvasGo = GameObject.Find(CanvasObjectName);
             if (canvasGo == null)
@@ -587,8 +611,71 @@ namespace PuyoGame.EditorTools
             startButton.transform.SetSiblingIndex(3);
             startText.transform.SetSiblingIndex(4);
 
+            touchPad = BuildTouchPad(canvasGo);
+
             titleRoot.SetActive(true);        // 起動時はタイトルから始まる
             gameOverRoot.SetActive(false);
+        }
+
+        /// <summary>
+        /// 画面下部のタッチ操作ボタンを組み立てる。
+        /// スマホにはキーボードが無いので、これが無いと遊べない。
+        /// </summary>
+        static TouchControlPad BuildTouchPad(GameObject canvasGo)
+        {
+            var root = FindOrCreateRoot(canvasGo.transform, "TouchPad");
+            root.transform.SetAsFirstSibling();      // タイトルやゲームオーバーより奥に置く
+
+            var buttons = new HoldButton[TouchPadLayout.Length];
+            for (int i = 0; i < TouchPadLayout.Length; i++)
+            {
+                var item = TouchPadLayout[i];
+
+                var img = FindOrCreateImage(root.transform, item.name, RoundButtonPath);
+                img.raycastTarget = true;            // ここで指を受ける
+                img.preserveAspect = true;
+                img.color = new Color(1f, 1f, 1f, 0.88f);
+
+                var rt = img.rectTransform;
+                rt.anchorMin = new Vector2(item.x, 0f);
+                rt.anchorMax = new Vector2(item.x, 0f);
+                rt.pivot = new Vector2(0.5f, 0.5f);
+                rt.anchoredPosition = new Vector2(0f, TouchPadY);
+                rt.sizeDelta = new Vector2(item.size, item.size);
+
+                var icon = FindOrCreateImage(img.transform, "Icon", IconRoot + "/" + item.icon);
+                icon.raycastTarget = false;
+                icon.color = new Color(1f, 1f, 1f, 0.95f);
+                var irt = icon.rectTransform;
+                irt.anchorMin = new Vector2(0.5f, 0.5f);
+                irt.anchorMax = new Vector2(0.5f, 0.5f);
+                irt.pivot = new Vector2(0.5f, 0.5f);
+                irt.anchoredPosition = new Vector2(0f, item.size * 0.04f);   // 立体感の分だけ上へ
+                irt.sizeDelta = new Vector2(item.size * 0.52f, item.size * 0.52f);
+                // 右回転は、同じ矢印を左右反転して使う
+                irt.localScale = new Vector3(item.mirrored ? -1f : 1f, 1f, 1f);
+
+                var hold = img.GetComponent<HoldButton>();
+                if (hold == null) hold = img.gameObject.AddComponent<HoldButton>();
+                buttons[i] = hold;
+            }
+
+            var pad = canvasGo.GetComponent<TouchControlPad>();
+            if (pad == null) pad = canvasGo.AddComponent<TouchControlPad>();
+
+            // パッド自体は消したり出したりするので、制御役は常に生きている Canvas に置く
+            var so = new SerializedObject(pad);
+            so.FindProperty("root").objectReferenceValue = root;
+            so.FindProperty("moveLeft").objectReferenceValue = buttons[0];
+            so.FindProperty("rotateLeft").objectReferenceValue = buttons[1];
+            so.FindProperty("softDrop").objectReferenceValue = buttons[2];
+            so.FindProperty("rotateRight").objectReferenceValue = buttons[3];
+            so.FindProperty("moveRight").objectReferenceValue = buttons[4];
+            so.ApplyModifiedPropertiesWithoutUndo();
+
+            root.SetActive(false);        // プレイ中だけ出す
+            Debug.Log($"[PuyoGame] 操作ボタンを{TouchPadLayout.Length}個配置しました。");
+            return pad;
         }
 
         /// <summary>タイトル画面の背景で漂う写真ぷよを用意する。</summary>
@@ -1240,6 +1327,7 @@ namespace PuyoGame.EditorTools
             fso.FindProperty("board").objectReferenceValue = view;
             fso.FindProperty("widthFill").floatValue = WidthFill;
             fso.FindProperty("heightFill").floatValue = HeightFill;
+            fso.FindProperty("bottomReserve").floatValue = BottomReserve;
             fso.ApplyModifiedPropertiesWithoutUndo();
         }
     }

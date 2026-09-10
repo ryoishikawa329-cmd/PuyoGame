@@ -23,28 +23,27 @@
         -webkit-tap-highlight-color: transparent;
         -webkit-text-size-adjust: 100%;
       }
-      #wrap {
+      #frame {
         position: fixed;
         inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* iPhone のノッチやホームバーを避ける */
-        padding: env(safe-area-inset-top) env(safe-area-inset-right)
-                 env(safe-area-inset-bottom) env(safe-area-inset-left);
-        box-sizing: border-box;
-      }
-      /* 端末や窓の形によらず、常に 9:19.5 の縦長で表示する。
-         はみ出す方向は letterbox（余白）になるので、盤面が切れることがない。 */
-      #frame {
-        position: relative;
-        aspect-ratio: 9 / 19.5;
-        height: 100%;
-        max-width: 100%;
-        max-height: 100%;
+        /* スマホでは表示領域いっぱいに広げ、左右の黒帯を作らない。
+           dvh はツールバーの出入りに追従するので、iOS Safari でも高さが揺れない。 */
+        width: 100vw;
+        height: 100vh;
+        width: 100dvw;
+        height: 100dvh;
+        margin: 0 auto;
         background: #0b0a14;
-        box-shadow: 0 0 48px rgba(0, 0, 0, 0.6);
         overflow: hidden;
+      }
+      /* 横に広い窓（PCなど）だけは、間延びしないよう縦長を保って中央に置く。
+         スマホの縦画面はこの条件に入らないので、いっぱいに広がる。 */
+      @media (min-aspect-ratio: 3/4) {
+        #frame {
+          width: auto;
+          aspect-ratio: 9 / 19.5;
+          box-shadow: 0 0 48px rgba(0, 0, 0, 0.6);
+        }
       }
       #unity-canvas {
         display: block;
@@ -91,14 +90,12 @@
     </style>
   </head>
   <body>
-    <div id="wrap">
-      <div id="frame">
-        <canvas id="unity-canvas" tabindex="-1"></canvas>
-        <div id="loading">
-          <div>Loading…</div>
-          <div id="bar"><i></i></div>
-          <div id="error"></div>
-        </div>
+    <div id="frame">
+      <canvas id="unity-canvas" tabindex="-1"></canvas>
+      <div id="loading">
+        <div>Loading…</div>
+        <div id="bar"><i></i></div>
+        <div id="error"></div>
       </div>
     </div>
 
@@ -115,17 +112,24 @@
       function resize() {
         var ratio = Math.min(window.devicePixelRatio || 1, 2);
         var rect = frame.getBoundingClientRect();
-        canvas.width = Math.max(1, Math.round(rect.width * ratio));
-        canvas.height = Math.max(1, Math.round(rect.height * ratio));
+        var w = Math.max(1, Math.round(rect.width * ratio));
+        var h = Math.max(1, Math.round(rect.height * ratio));
+        if (canvas.width !== w || canvas.height !== h) {
+          canvas.width = w;
+          canvas.height = h;
+        }
       }
       resize();
       window.addEventListener("resize", resize);
+      // iOS はツールバーの出入りでも表示領域が変わる
+      if (window.visualViewport) window.visualViewport.addEventListener("resize", resize);
       window.addEventListener("orientationchange", function () {
-        // 端末の回転直後は大きさが確定していないことがあるので、少し待って測り直す
+        // 回転直後は大きさが確定していないことがあるので、少し待って測り直す
         setTimeout(resize, 120);
+        setTimeout(resize, 400);
       });
 
-      // 画面の二本指ズームと、ダブルタップによる拡大を止める
+      // 二本指ズームと、ダブルタップによる拡大を止める
       document.addEventListener("gesturestart", function (e) { e.preventDefault(); }, { passive: false });
       document.addEventListener("dblclick", function (e) { e.preventDefault(); }, { passive: false });
 
@@ -147,21 +151,39 @@
       }).then(function (instance) {
         loading.style.display = "none";
         resize();
-        // ブラウザは利用者が触るまで音を止める。最初の入力で Unity 側に知らせる。
-        var notify = function () {
-          try { instance.SendMessage("GameAudio", "UnlockFromBrowser"); } catch (e) { }
-          window.removeEventListener("pointerdown", notify);
-          window.removeEventListener("keydown", notify);
-          window.removeEventListener("touchend", notify);
-        };
-        window.addEventListener("pointerdown", notify);
-        window.addEventListener("keydown", notify);
-        window.addEventListener("touchend", notify);
+        setupAudioUnlock(instance);
       }).catch(function (message) {
         loading.style.display = "flex";
         errorBox.style.display = "block";
         errorBox.textContent = message;
       });
+
+      // ブラウザ（特に iOS Safari）は、利用者が触るまで音を止めている。
+      // 解除は「操作の処理の中」で呼ぶ必要があるので、ここで受けて Unity 側へ渡す。
+      function setupAudioUnlock(instance) {
+        var events = ["pointerdown", "touchend", "click", "keydown"];
+        var done = false;
+
+        function tryUnlock() {
+          // puyoResumeAudio は PuyoAudio.jslib が window に置く。
+          // 1=鳴らせる 0=まだ止まっている -1=見つからない
+          var state = window.puyoResumeAudio ? window.puyoResumeAudio() : -1;
+          try { instance.SendMessage("GameAudio", "UnlockFromBrowser"); } catch (e) { }
+
+          if (done || state === 0) return;   // 0 のときは次の操作でもう一度試す
+          done = true;
+          events.forEach(function (t) { window.removeEventListener(t, tryUnlock); });
+        }
+
+        events.forEach(function (t) {
+          window.addEventListener(t, tryUnlock, { passive: true });
+        });
+
+        // タブから戻ったときに止められたままにならないようにする
+        document.addEventListener("visibilitychange", function () {
+          if (!document.hidden && window.puyoResumeAudio) window.puyoResumeAudio();
+        });
+      }
     </script>
   </body>
 </html>

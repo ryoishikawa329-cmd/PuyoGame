@@ -18,7 +18,10 @@ namespace PuyoGame
         [SerializeField] float widthFill = 0.85f;
         [Tooltip("盤面の高さが画面高さに占める割合の上限")]
         [Range(0.5f, 1f)]
-        [SerializeField] float heightFill = 0.92f;
+        [SerializeField] float heightFill = 0.88f;
+        [Tooltip("画面下部に操作ボタン用として空けておく割合。盤面はその分だけ上に寄る")]
+        [Range(0f, 0.35f)]
+        [SerializeField] float bottomReserve = 0.15f;
 
         Camera cam;
         float lastAspect;
@@ -63,9 +66,12 @@ namespace PuyoGame
 
             cam.orthographicSize = ComputeSize(
                 board.Width * board.CellSize, board.Height * board.CellSize, Aspect);
+
+            // 下に空けた分だけカメラを下げると、盤面が画面の上寄りに映る
+            float shift = cam.orthographicSize * Mathf.Clamp01(bottomReserve);
             cam.transform.position = new Vector3(
                 board.transform.position.x,
-                board.transform.position.y,
+                board.transform.position.y - shift,
                 cam.transform.position.z != 0f ? cam.transform.position.z : -10f);
 
             lastWidth = Screen.width;
@@ -78,12 +84,17 @@ namespace PuyoGame
         /// <summary>
         /// 横幅を埋めるのに必要な大きさと、縦に収めるのに必要な大きさの、厳しい方を採る。
         /// 縦長画面では横幅が、横長画面では高さが効く。
+        /// 高さは、操作ボタン用に空ける分を除いた範囲で数える。
         /// </summary>
         public float ComputeSize(float boardWidth, float boardHeight, float aspect)
         {
+            float usable = Mathf.Max(1f - Mathf.Clamp01(bottomReserve), 0.1f);
             float fromWidth = (boardWidth / Mathf.Max(widthFill, 0.01f)) / (2f * Mathf.Max(aspect, 0.01f));
-            float fromHeight = (boardHeight / Mathf.Max(heightFill, 0.01f)) / 2f;
+            float fromHeight = (boardHeight / Mathf.Max(heightFill, 0.01f)) / (2f * usable);
             return Mathf.Max(fromWidth, fromHeight);
         }
+
+        /// <summary>画面下部に空けている割合（動作確認用）。</summary>
+        public float BottomReserve => bottomReserve;
     }
 }
