@@ -1210,6 +1210,7 @@ GameObject:
   - component: {fileID: 552326517}
   - component: {fileID: 552326516}
   - component: {fileID: 552326519}
+  - component: {fileID: 552326520}
   m_Layer: 0
   m_Name: GameAudio
   m_TagString: Untagged
@@ -1373,6 +1374,19 @@ AudioReverbFilter:
   m_LFReference: 250
   m_ReflectionsDelay: 0.01
   m_ReverbPreset: 27
+--- !u!114 &552326520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552326515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7e02a91b34249ceb8976ac202d6ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuyoGame.WebAudioUnlock
+  music: {fileID: 741000010}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,6 +2155,7 @@ GameObject:
   - component: {fileID: 791007339}
   - component: {fileID: 791007340}
   - component: {fileID: 791007341}
+  - component: {fileID: 791007342}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -2425,6 +2440,25 @@ MonoBehaviour:
   frameOrder: -20
   panelOrder: -15
   glossOrder: -12
+--- !u!114 &791007342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791007335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a154b05ac4f945e08e18f69c50880af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuyoGame.PointerControls
+  controller: {fileID: 791007338}
+  gameManager: {fileID: 791007339}
+  tapMaxSeconds: 0.4
+  tapMaxDrag: 0.035
+  dragStep: 0.05
+  flickToDrop: 0.28
+  sideZone: 0.34
 --- !u!114 &865800671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2571,7 +2605,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press R to Restart
+  m_text: Tap or Press R to Restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

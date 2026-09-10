@@ -108,6 +108,19 @@ namespace PuyoGame
             fadeInProgress = fadeInSeconds > 0f ? 0f : 1f;
         }
 
+        /// <summary>
+        /// いまの曲を最初から鳴らし直す。
+        /// ブラウザに音を止められている間に始まった曲を、解除後に鳴らすために使う。
+        /// </summary>
+        public void Replay()
+        {
+            var track = CurrentTrack;
+            if (track == Track.None) return;
+
+            CurrentTrack = Track.None;      // PlayTrack は同じ曲だと何もしないため、一度戻す
+            PlayTrack(track);
+        }
+
         void FadeOutCurrent()
         {
             if (current == null) return;

@@ -25,6 +25,7 @@ namespace PuyoGame.EditorTools
         const string AudioObjectName = "GameAudio";
         const string MusicObjectName = "GameMusic";
         const string PostVolumeName = "PostProcessVolume";
+        const string WebGLTemplateName = "PROJECT:PuyoPortrait";
         const string PostProfilePath = "Assets/Settings/PuyoPostProcess.asset";
 
         const string LogoPath = "Assets/Sprites/UI/logo_puyogame.png";
@@ -87,6 +88,7 @@ namespace PuyoGame.EditorTools
             // 画像のインポート修正は AssetDatabase.Refresh を伴うので、シーンを触る前に済ませる
             PrepareSpriteAssets();
             ConfigurePlayerSettings();
+            ConfigureWebGLSettings();
 
             var view = CreateOrFindBoard();
             ApplyBoardSize(view);
@@ -97,6 +99,7 @@ namespace PuyoGame.EditorTools
             var ctrl = EnsureFallController(view, audio);
             EnsureGameManager(view, ctrl, audio, music);
             EnsureClearEffect(view, ctrl);
+            EnsurePointerControls(view, ctrl);
             FitMainCamera(view);
             EnsureBackground();          // カメラ画角が決まってから覆わせる
             EnsureEventSystem();
@@ -129,6 +132,7 @@ namespace PuyoGame.EditorTools
         {
             PrepareSpriteAssets();
             ConfigurePlayerSettings();
+            ConfigureWebGLSettings();
 
             var scene = EditorSceneManager.OpenScene("Assets/Scenes/SampleScene.unity");
             var view = CreateOrFindBoard();
@@ -140,6 +144,7 @@ namespace PuyoGame.EditorTools
             var ctrl = EnsureFallController(view, audio);
             EnsureGameManager(view, ctrl, audio, music);
             EnsureClearEffect(view, ctrl);
+            EnsurePointerControls(view, ctrl);
             FitMainCamera(view);
             EnsureBackground();          // カメラ画角が決まってから覆わせる
             EnsureEventSystem();
@@ -244,6 +249,10 @@ namespace PuyoGame.EditorTools
             // 効果音にはごく薄く残響だけ。高域は残して歯切れを保つ。
             AddAudioEffects(go, reverbLevel: -1300f, lowPassCutoff: 0f);
 
+            // index.html が SendMessage("GameAudio", "UnlockFromBrowser") を呼ぶので、
+            // 解除役はこのオブジェクトに置く必要がある。
+            if (go.GetComponent<WebAudioUnlock>() == null) go.AddComponent<WebAudioUnlock>();
+
             var audio = go.GetComponent<GameAudio>();
             if (audio == null) audio = go.AddComponent<GameAudio>();
             return audio;
@@ -273,6 +282,14 @@ namespace PuyoGame.EditorTools
 
             var player = go.GetComponent<MusicPlayer>();
             if (player == null) player = go.AddComponent<MusicPlayer>();
+
+            var unlock = GameObject.Find(AudioObjectName)?.GetComponent<WebAudioUnlock>();
+            if (unlock != null)
+            {
+                var uso = new SerializedObject(unlock);
+                uso.FindProperty("music").objectReferenceValue = player;
+                uso.ApplyModifiedPropertiesWithoutUndo();
+            }
             return player;
         }
 
@@ -543,7 +560,7 @@ namespace PuyoGame.EditorTools
             hint.fontSize = 52f;
             hint.alignment = TextAlignmentOptions.Center;
             hint.color = Color.white;
-            hint.text = "Press R to Restart";
+            hint.text = "Tap or Press R to Restart";
 
             // --- 大量消去のポップアップ（中央やや上、既定は非表示） ---
             var popupRoot = FindOrCreateRoot(canvasGo.transform, "PopupRoot");
@@ -751,6 +768,18 @@ namespace PuyoGame.EditorTools
             return setting;
         }
 
+        /// <summary>タップ・クリック操作を受け付けるコンポーネントを用意する。</summary>
+        static void EnsurePointerControls(BoardView view, PairFallController ctrl)
+        {
+            var controls = view.GetComponent<PointerControls>();
+            if (controls == null) controls = Undo.AddComponent<PointerControls>(view.gameObject);
+
+            var so = new SerializedObject(controls);
+            so.FindProperty("controller").objectReferenceValue = ctrl;
+            so.FindProperty("gameManager").objectReferenceValue = view.GetComponent<GameManager>();
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
+
         // ---------------- 画面比率 ----------------
 
         /// <summary>
@@ -763,16 +792,140 @@ namespace PuyoGame.EditorTools
             PlayerSettings.allowedAutorotateToPortraitUpsideDown = false;
             PlayerSettings.allowedAutorotateToLandscapeLeft = false;
             PlayerSettings.allowedAutorotateToLandscapeRight = false;
-
-            // PC で実行したときも縦長で立ち上がるようにする
             PlayerSettings.defaultScreenWidth = DesignScreenWidth;
             PlayerSettings.defaultScreenHeight = DesignScreenHeight;
             PlayerSettings.defaultIsNativeResolution = false;
             PlayerSettings.resizableWindow = true;
 
-            AssetDatabase.SaveAssets();
+            EditProjectSettings(so =>
+            {
+                SetInt(so, "defaultScreenOrientation", 0);           // Portrait
+                SetBool(so, "allowedAutorotateToPortrait", true);
+                SetBool(so, "allowedAutorotateToPortraitUpsideDown", false);
+                SetBool(so, "allowedAutorotateToLandscapeLeft", false);
+                SetBool(so, "allowedAutorotateToLandscapeRight", false);
+
+                // PC で実行したときも縦長で立ち上がるようにする
+                SetInt(so, "defaultScreenWidth", DesignScreenWidth);
+                SetInt(so, "defaultScreenHeight", DesignScreenHeight);
+                SetBool(so, "defaultIsNativeResolution", false);
+                SetBool(so, "resizableWindow", true);
+            });
+
             Debug.Log($"[PuyoGame] 画面を縦向き固定 / {DesignScreenWidth}x{DesignScreenHeight}"
                       + $"（{DesignAspectWidth}:{DesignAspectHeight}）に設定しました。");
+        }
+
+        // ---------------- WebGL ----------------
+
+        [MenuItem("Tools/PuyoGame/WebGL向けの設定を適用")]
+        public static void ConfigureWebGLSettings()
+        {
+            // 通常のAPIでも設定しておく。エディタを開いたまま操作したときに
+            // Inspector の表示と食い違わないようにするため。
+            // ただしこれだけではファイルに保存されないので、続けて SerializedObject でも書く。
+            PlayerSettings.WebGL.template = WebGLTemplateName;
+            PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Gzip;
+            PlayerSettings.WebGL.decompressionFallback = true;
+            PlayerSettings.WebGL.dataCaching = true;
+            PlayerSettings.WebGL.linkerTarget = WebGLLinkerTarget.Wasm;
+            PlayerSettings.WebGL.exceptionSupport = WebGLExceptionSupport.ExplicitlyThrownExceptionsOnly;
+            PlayerSettings.WebGL.powerPreference = WebGLPowerPreference.HighPerformance;
+            PlayerSettings.runInBackground = true;
+
+            EditProjectSettings(so =>
+            {
+                // 縦長固定の自作テンプレートを使う。画面比が変わっても盤面が切れない。
+                SetString(so, "webGLTemplate", WebGLTemplateName);
+                SetInt(so, "defaultScreenWidthWeb", DesignScreenWidth);
+                SetInt(so, "defaultScreenHeightWeb", DesignScreenHeight);
+
+                // どんな静的ホストでも動くように、解凍の代替手段を入れておく。
+                // Brotli はサーバ側の設定が要るので Gzip にする。
+                SetInt(so, "webGLCompressionFormat", (int)WebGLCompressionFormat.Gzip);
+                SetBool(so, "webGLDecompressionFallback", true);
+                SetBool(so, "webGLDataCaching", true);
+                SetInt(so, "webGLLinkerTarget", (int)WebGLLinkerTarget.Wasm);
+                SetInt(so, "webGLExceptionSupport",
+                       (int)WebGLExceptionSupport.ExplicitlyThrownExceptionsOnly);
+                SetInt(so, "webGLPowerPreference", (int)WebGLPowerPreference.HighPerformance);
+
+                // タブが後ろに回っても止めない（音と落下が飛ばないように）
+                SetBool(so, "runInBackground", true);
+            });
+
+            // URP をリニア色空間で使うので WebGL2 が要る。Unity 6 の既定がまさに WebGL2。
+            var apis = PlayerSettings.GetGraphicsAPIs(BuildTarget.WebGL);
+            Debug.Log($"[PuyoGame] WebGL の設定を適用しました: テンプレート={PlayerSettings.WebGL.template} "
+                      + $"/ 圧縮={PlayerSettings.WebGL.compressionFormat}"
+                      + $"（代替解凍 {PlayerSettings.WebGL.decompressionFallback}）"
+                      + $"/ 色空間={PlayerSettings.colorSpace} / 描画API={string.Join(", ", apis)}");
+        }
+
+        [MenuItem("Tools/PuyoGame/WebGLビルドを作る")]
+        public static void BuildWebGL()
+        {
+            ConfigureWebGLSettings();
+
+            const string output = "Build/WebGL";
+            var options = new BuildPlayerOptions
+            {
+                scenes = new[] { "Assets/Scenes/SampleScene.unity" },
+                locationPathName = output,
+                target = BuildTarget.WebGL,
+                targetGroup = BuildTargetGroup.WebGL,
+                options = BuildOptions.None,
+            };
+
+            var report = BuildPipeline.BuildPlayer(options);
+            var summary = report.summary;
+            Debug.Log($"[PuyoGame] WebGLビルド: {summary.result} "
+                      + $"/ {summary.totalSize / 1024 / 1024}MB / {summary.totalTime.TotalSeconds:F0}秒 → {output}");
+
+            if (summary.result != UnityEditor.Build.Reporting.BuildResult.Succeeded)
+                throw new System.Exception($"WebGLビルドに失敗しました: {summary.result}");
+        }
+
+        /// <summary>
+        /// Player Settings を SerializedObject 経由で書き換える。
+        /// PlayerSettings.* のプロパティに代入するだけでは、バッチモードだと
+        /// ファイルに書き出されないまま終了してしまうため。
+        /// </summary>
+        static void EditProjectSettings(Action<SerializedObject> edit)
+        {
+            foreach (var settings in Resources.FindObjectsOfTypeAll<PlayerSettings>())
+            {
+                var so = new SerializedObject(settings);
+                edit(so);
+                so.ApplyModifiedPropertiesWithoutUndo();
+            }
+            AssetDatabase.SaveAssets();
+        }
+
+        // 項目名が変わったときに黙って効かなくなるのを避けるため、見つからなければ警告を出す
+        static SerializedProperty Find(SerializedObject so, string name)
+        {
+            var p = so.FindProperty(name);
+            if (p == null) Debug.LogWarning($"[PuyoGame] Player Settings に「{name}」が見つかりませんでした。");
+            return p;
+        }
+
+        static void SetInt(SerializedObject so, string name, int value)
+        {
+            var p = Find(so, name);
+            if (p != null) p.intValue = value;
+        }
+
+        static void SetBool(SerializedObject so, string name, bool value)
+        {
+            var p = Find(so, name);
+            if (p != null) p.boolValue = value;
+        }
+
+        static void SetString(SerializedObject so, string name, string value)
+        {
+            var p = Find(so, name);
+            if (p != null) p.stringValue = value;
         }
 
         [MenuItem("Tools/PuyoGame/Game ビューを 19.5:9 にする")]
