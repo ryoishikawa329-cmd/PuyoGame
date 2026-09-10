@@ -21,7 +21,7 @@ namespace PuyoGame
         [SerializeField] float heightFill = 0.88f;
         [Tooltip("画面下部に操作ボタン用として空けておく割合。盤面はその分だけ上に寄る")]
         [Range(0f, 0.35f)]
-        [SerializeField] float bottomReserve = 0.15f;
+        [SerializeField] float bottomReserve = 0.20f;
 
         Camera cam;
         float lastAspect;

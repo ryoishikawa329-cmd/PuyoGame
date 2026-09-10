@@ -105,7 +105,7 @@ namespace PuyoGame.EditorTools
 
         const float WidthFill = 0.85f;           // 盤面が画面幅に占める割合の目安
         const float HeightFill = 0.88f;          // 盤面が画面高さに占める割合の上限（枠のぶん余裕を残す）
-        const float BottomReserve = 0.15f;       // 操作ボタンのために画面下部を空ける割合
+        const float BottomReserve = 0.20f;       // 操作ボタンとバッジのために画面下部を空ける割合
 
         /// <summary>
         /// 画面下部の操作ボタン。左から順に並べる。
@@ -113,15 +113,19 @@ namespace PuyoGame.EditorTools
         /// </summary>
         static readonly (string name, string icon, float x, float size, bool mirrored)[] TouchPadLayout =
         {
-            // 左に移動ボタン2つ、右に回転ボタン2つ、真ん中に落下
-            ("MoveLeftButton",    "arrowLeft.png",  0.10f, 165f, false),
-            ("MoveRightButton",   "arrowRight.png", 0.27f, 165f, false),
-            ("SoftDropButton",    "arrowDown.png",  0.50f, 165f, false),
-            ("RotateLeftButton",  "return.png",     0.73f, 165f, false),
-            ("RotateRightButton", "return.png",     0.90f, 165f, true),
+            // 左のかたまり＝動かす系（左・下・右）、右のかたまり＝回す系。
+            // 間を大きく空けて、どちらが何の役目か一目で分かるようにする。
+            ("MoveLeftButton",    "arrowLeft.png",  0.080f, 135f, false),
+            ("SoftDropButton",    "arrowDown.png",  0.235f, 135f, false),
+            ("MoveRightButton",   "arrowRight.png", 0.390f, 135f, false),
+
+            ("RotateLeftButton",  "return.png",     0.700f, 135f, false),
+            ("RotateRightButton", "return.png",     0.855f, 135f, true),
         };
 
-        const float TouchPadY = 195f;            // 画面下端からのUI座標
+        // Netlify の「Powered by Netlify」バッジが右下に出る（無料プランでは消せない）。
+        // 重ならないよう、ボタンをその上まで持ち上げる。
+        const float TouchPadY = 300f;            // 画面下端からのUI座標
 
         [MenuItem("Tools/PuyoGame/シーンに盤面とUIをセットアップ")]
         public static void SetupBoardInScene()
